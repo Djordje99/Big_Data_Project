@@ -22,9 +22,9 @@ pomoć podataka.
 Skup podataka koji će se koristiti u projektu je anketa iz 2015 godine sa teritorije
 Severne Amerike. Zavistan podatak ovog skupa podataka je da li osoba ima
 dijabetes, pre-dijabetes ili nema. Zavisni podaci su:
-• HighBP – visok krvni pritisak, visok pritisak se smatra kada je gornji
-pritisak veći od 130 ili donji pritisak veći od 80.
 
+    • HighBP – visok krvni pritisak, visok pritisak se smatra kada je gornji
+    pritisak veći od 130 ili donji pritisak veći od 80.
     • HighChol – visok holesterol, visokim holesterolom se smatra kada je 240
     mg/dl.
     • CholCheck – provera holesterola u poslednjih 5 godina

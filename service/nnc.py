@@ -2,7 +2,7 @@ from PyQt5.QtCore import *
 import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.colors import ListedColormap
-from sklearn import neighbors, datasets
+from sklearn import neighbors
 from sklearn.inspection import DecisionBoundaryDisplay
 
 from preprocessor.data_loader import DataLoader

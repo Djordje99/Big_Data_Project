@@ -30,11 +30,15 @@ from sklearn.metrics import roc_auc_score
 from PyQt5.QtWidgets import QApplication
 import sys
 from gui.diabetes_controller import DiabetesController
+from service.train_model import train
+from service.predictor import predict
+
 
 if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    main_window = DiabetesController()
+    predict()
+    # app = QApplication(sys.argv)
+    # main_window = DiabetesController()
 
-    main_window.show()
-    sys.exit(app.exec_())
+    # main_window.show()
+    # sys.exit(app.exec_())
 
