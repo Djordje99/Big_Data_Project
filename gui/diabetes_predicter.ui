@@ -18,7 +18,7 @@
     <item row="0" column="1">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="visualation">
        <attribute name="title">
@@ -349,603 +349,690 @@
        <attribute name="title">
         <string>Predict</string>
        </attribute>
-       <layout class="QGridLayout" name="gridLayout_3">
-        <item row="0" column="0">
-         <layout class="QVBoxLayout" name="verticalLayout_34">
-          <property name="leftMargin">
-           <number>7</number>
-          </property>
-          <property name="topMargin">
-           <number>7</number>
-          </property>
-          <property name="rightMargin">
-           <number>7</number>
-          </property>
-          <property name="bottomMargin">
-           <number>7</number>
-          </property>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_33">
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_32">
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_17">
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_12">
-                  <item>
-                   <widget class="QLabel" name="label_10">
-                    <property name="text">
-                     <string>HighBP</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_4">
-                    <item>
-                     <widget class="QRadioButton" name="high_bp_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="high_bp_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_13">
-                  <item>
-                   <widget class="QLabel" name="label_11">
-                    <property name="text">
-                     <string>HighChol</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_5">
-                    <item>
-                     <widget class="QRadioButton" name="high_chol_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="high_chol_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_14">
-                  <item>
-                   <widget class="QLabel" name="label_12">
-                    <property name="text">
-                     <string>CholCheck</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_6">
-                    <item>
-                     <widget class="QRadioButton" name="chol_check_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="chol_check_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_15">
-                  <item>
-                   <widget class="QLabel" name="label_13">
-                    <property name="text">
-                     <string>Smoker</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_7">
-                    <item>
-                     <widget class="QRadioButton" name="smoker_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="smoker_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_16">
-                  <item>
-                   <widget class="QLabel" name="label_14">
-                    <property name="text">
-                     <string>Stroke</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_8">
-                    <item>
-                     <widget class="QRadioButton" name="stroke_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="stroke_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_17">
-                  <item>
-                   <widget class="QLabel" name="label_15">
-                    <property name="text">
-                     <string>HeartAttak</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_9">
-                    <item>
-                     <widget class="QRadioButton" name="heart_attak_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="heart_attak_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_18">
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_18">
-                  <item>
-                   <widget class="QLabel" name="label_16">
-                    <property name="text">
-                     <string>PhysActivity</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_10">
-                    <item>
-                     <widget class="QRadioButton" name="phys_activity_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="phys_activity_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_19">
-                  <item>
-                   <widget class="QLabel" name="label_17">
-                    <property name="text">
-                     <string>Fruits</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_11">
-                    <item>
-                     <widget class="QRadioButton" name="fruits_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="fruits_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_20">
-                  <item>
-                   <widget class="QLabel" name="label_18">
-                    <property name="text">
-                     <string>Veggies</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_12">
-                    <item>
-                     <widget class="QRadioButton" name="veggies_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="veggies_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_21">
-                  <item>
-                   <widget class="QLabel" name="label_19">
-                    <property name="text">
-                     <string>AlcoholConsump</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_13">
-                    <item>
-                     <widget class="QRadioButton" name="alcohol_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="alchocol_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_22">
-                  <item>
-                   <widget class="QLabel" name="label_20">
-                    <property name="text">
-                     <string>AnyHealthcare</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_14">
-                    <item>
-                     <widget class="QRadioButton" name="heathcare_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="heathcare_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_23">
-                  <item>
-                   <widget class="QLabel" name="label_21">
-                    <property name="text">
-                     <string>NoDocbcCost</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_15">
-                    <item>
-                     <widget class="QRadioButton" name="doc_cost_yes">
-                      <property name="text">
-                       <string>Yes</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QRadioButton" name="doc_cost_no">
-                      <property name="text">
-                       <string>No</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_19">
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_24">
-                <item>
-                 <widget class="QLabel" name="label_22">
-                  <property name="text">
-                   <string>DiffWalk</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_16">
-                  <item>
-                   <widget class="QRadioButton" name="diff_walk_yes">
-                    <property name="text">
-                     <string>Yes</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QRadioButton" name="diff_walk_no">
-                    <property name="text">
-                     <string>No</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_25">
-                <item>
-                 <widget class="QLabel" name="label_31">
-                  <property name="text">
-                   <string>GenHlth</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QComboBox" name="gen_hlth_box"/>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_26">
-                <item>
-                 <widget class="QLabel" name="label_32">
-                  <property name="text">
-                   <string>MentHlth</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QComboBox" name="ment_hlth_box"/>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_27">
-                <item>
-                 <widget class="QLabel" name="label_33">
-                  <property name="text">
-                   <string>PhysHlth</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QComboBox" name="phys_hlth_box"/>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_28">
-                <item>
-                 <widget class="QLabel" name="label_34">
-                  <property name="text">
-                   <string>Sex</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QComboBox" name="sex_box"/>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_29">
-                <item>
-                 <widget class="QLabel" name="label_35">
-                  <property name="text">
-                   <string>Age</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QComboBox" name="age_box"/>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_20">
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_31">
-              <item>
-               <widget class="QLabel" name="label_37">
-                <property name="text">
-                 <string>Education</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QComboBox" name="education_box"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_30">
-              <item>
-               <widget class="QLabel" name="label_36">
-                <property name="text">
-                 <string>Income</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QComboBox" name="income_box"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <widget class="QPushButton" name="predict_btn">
-              <property name="text">
-               <string>Predict</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </item>
-       </layout>
+       <widget class="QWidget" name="">
+        <layout class="QVBoxLayout" name="verticalLayout_34">
+         <property name="leftMargin">
+          <number>7</number>
+         </property>
+         <property name="topMargin">
+          <number>7</number>
+         </property>
+         <property name="rightMargin">
+          <number>7</number>
+         </property>
+         <property name="bottomMargin">
+          <number>7</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_33">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_32">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_17">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_12">
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>HighBP</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <item>
+                    <widget class="QRadioButton" name="high_bp_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">HighBP</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="high_bp_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">HighBP</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>HighChol</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item>
+                    <widget class="QRadioButton" name="high_chol_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">HighChol</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="high_chol_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">HighChol</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>CholCheck</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                   <item>
+                    <widget class="QRadioButton" name="chol_check_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">CholCheck</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="chol_check_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">CholCheck</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_15">
+                 <item>
+                  <widget class="QLabel" name="label_13">
+                   <property name="text">
+                    <string>Smoker</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <item>
+                    <widget class="QRadioButton" name="smoker_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">Smoker</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="smoker_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">Smoker</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <item>
+                  <widget class="QLabel" name="label_14">
+                   <property name="text">
+                    <string>Stroke</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <item>
+                    <widget class="QRadioButton" name="stroke_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="stroke_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_17">
+                 <item>
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>HeartAttak</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_9">
+                   <item>
+                    <widget class="QRadioButton" name="heart_attak_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">HeartAttack</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="heart_attak_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">HeartAttack</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_18">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_18">
+                 <item>
+                  <widget class="QLabel" name="label_16">
+                   <property name="text">
+                    <string>PhysActivity</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+                   <item>
+                    <widget class="QRadioButton" name="phys_activity_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">PhysActivity</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="phys_activity_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">PhysActivity</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_19">
+                 <item>
+                  <widget class="QLabel" name="label_17">
+                   <property name="text">
+                    <string>Fruits</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                   <item>
+                    <widget class="QRadioButton" name="fruits_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">Fruits</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="fruits_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">Fruits</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_20">
+                 <item>
+                  <widget class="QLabel" name="label_18">
+                   <property name="text">
+                    <string>Veggies</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                   <item>
+                    <widget class="QRadioButton" name="veggies_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">Veggies</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="veggies_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">Veggies</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_21">
+                 <item>
+                  <widget class="QLabel" name="label_19">
+                   <property name="text">
+                    <string>AlcoholConsump</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_13">
+                   <item>
+                    <widget class="QRadioButton" name="alcohol_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">Alcohol</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="alchocol_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">Alcohol</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_22">
+                 <item>
+                  <widget class="QLabel" name="label_20">
+                   <property name="text">
+                    <string>AnyHealthcare</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_14">
+                   <item>
+                    <widget class="QRadioButton" name="heathcare_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">Heathcare</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="heathcare_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">Heathcare</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_23">
+                 <item>
+                  <widget class="QLabel" name="label_21">
+                   <property name="text">
+                    <string>NoDocbcCost</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_15">
+                   <item>
+                    <widget class="QRadioButton" name="doc_cost_yes">
+                     <property name="text">
+                      <string>Yes</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">NoDocCost</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="doc_cost_no">
+                     <property name="text">
+                      <string>No</string>
+                     </property>
+                     <attribute name="buttonGroup">
+                      <string notr="true">NoDocCost</string>
+                     </attribute>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_19">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_24">
+               <item>
+                <widget class="QLabel" name="label_22">
+                 <property name="text">
+                  <string>DiffWalk</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <item>
+                  <widget class="QRadioButton" name="diff_walk_yes">
+                   <property name="text">
+                    <string>Yes</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">DiffWalk</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="diff_walk_no">
+                   <property name="text">
+                    <string>No</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">DiffWalk</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_25">
+               <item>
+                <widget class="QLabel" name="label_31">
+                 <property name="text">
+                  <string>GenHlth</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="gen_hlth_box"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_26">
+               <item>
+                <widget class="QLabel" name="label_32">
+                 <property name="text">
+                  <string>MentHlth</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="ment_hlth_box"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_27">
+               <item>
+                <widget class="QLabel" name="label_33">
+                 <property name="text">
+                  <string>PhysHlth</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="phys_hlth_box"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_28">
+               <item>
+                <widget class="QLabel" name="label_34">
+                 <property name="text">
+                  <string>Sex</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="sex_box"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_29">
+               <item>
+                <widget class="QLabel" name="label_35">
+                 <property name="text">
+                  <string>Age</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="age_box"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_20">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_31">
+             <item>
+              <widget class="QLabel" name="label_37">
+               <property name="text">
+                <string>Education</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="education_box"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_30">
+             <item>
+              <widget class="QLabel" name="label_36">
+               <property name="text">
+                <string>Income</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="income_box"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_35">
+             <item>
+              <widget class="QLabel" name="label_38">
+               <property name="text">
+                <string>BMI</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="bmi_box"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="predict_btn">
+             <property name="text">
+              <string>Predict</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
       </widget>
      </widget>
     </item>
@@ -954,4 +1041,18 @@
  </widget>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="HighBP"/>
+  <buttongroup name="HighChol"/>
+  <buttongroup name="CholCheck"/>
+  <buttongroup name="Smoker"/>
+  <buttongroup name="HeartAttack"/>
+  <buttongroup name="PhysActivity"/>
+  <buttongroup name="Fruits"/>
+  <buttongroup name="Veggies"/>
+  <buttongroup name="Alcohol"/>
+  <buttongroup name="Heathcare"/>
+  <buttongroup name="NoDocCost"/>
+  <buttongroup name="DiffWalk"/>
+ </buttongroups>
 </ui>

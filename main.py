@@ -35,10 +35,9 @@ from service.predictor import predict
 
 
 if __name__ == '__main__':
-    predict()
-    # app = QApplication(sys.argv)
-    # main_window = DiabetesController()
+    app = QApplication(sys.argv)
+    main_window = DiabetesController()
 
-    # main_window.show()
-    # sys.exit(app.exec_())
+    main_window.show()
+    sys.exit(app.exec_())
 
