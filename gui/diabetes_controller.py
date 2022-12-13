@@ -13,6 +13,10 @@ COLUMN_NAMES = ['HighBP','HighChol','CholCheck','BMI','Smoker','Stroke','HeartDi
 
 DIMENSIONS = ([str(i) for i in range(2, 21)])
 
+AGE = {'18-24': 1, '25-31': 2, '32-40': 3, '41-45': 4, '46-50' : 5, '51-55': 7, '56-59': 8, '60-64': 9, '65-69': 10, '70-74': 11, '75-80': 12, 'over 80': 13}
+INCOME = {'less than $10K': 1, '$10K-$16K': 2, '$16K-$22K': 3, '$22K-$28K': 4, '$28K-$35K': 5, '$35K-$42K': 6, '$42K-$51K': 7, 'over $75K': 8}
+EDUCATION = {'No school': 1, 'Elementary': 2, 'Middle school': 3, 'High school': 4, 'Collage': 5, 'Master or more': 6}
+
 class DiabetesController(QMainWindow):
     def __init__(self)-> None:
         super(DiabetesController, self).__init__()
@@ -29,13 +33,13 @@ class DiabetesController(QMainWindow):
 
 
     def __init_predict_boxes(self):
-        self.ui.age_box.addItems([str(i) for i in range(1, 14)])
+        self.ui.age_box.addItems(AGE.keys())
         self.ui.sex_box.addItems(['Male', 'Female'])
-        self.ui.income_box.addItems([str(i) for i in range(1, 9)])
+        self.ui.income_box.addItems(INCOME.keys())
         self.ui.gen_hlth_box.addItems([str(i) for i in range(1, 6)])
         self.ui.ment_hlth_box.addItems([str(i) for i in range(1, 31)])
         self.ui.phys_hlth_box.addItems([str(i) for i in range(1, 31)])
-        self.ui.education_box.addItems([str(i) for i in range(1, 7)])
+        self.ui.education_box.addItems(EDUCATION.keys())
         self.ui.bmi_box.addItems([str(i) for i in range(12, 99)])
 
 
@@ -47,12 +51,12 @@ class DiabetesController(QMainWindow):
 
 
     def predict(self):
-        age = int(self.ui.age_box.currentText())
+        age = AGE[self.ui.age_box.currentText()]
         gen_hlth = int(self.ui.gen_hlth_box.currentText())
         ment_hlth = int(self.ui.ment_hlth_box.currentText())
         phys_hlth = int(self.ui.phys_hlth_box.currentText())
-        income = int(self.ui.income_box.currentText())
-        education = int(self.ui.education_box.currentText())
+        income = INCOME[self.ui.income_box.currentText()]
+        education = EDUCATION[self.ui.education_box.currentText()]
         sex = self.ui.sex_box.currentIndex()
         bmi = int(self.ui.bmi_box.currentText())
         high_bp = 1.0 if self.ui.high_bp_yes.isChecked() else 0.0

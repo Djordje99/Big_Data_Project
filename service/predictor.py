@@ -18,8 +18,6 @@ def predict(data_frame_row):
 def __prepare_data(data_frame_row):
     data_frame = pd.DataFrame([data_frame_row])
 
-    #data_frame[ATTRIBUTES] = data_frame[ATTRIBUTES].astype('category')
-
     data_frame['BMI'] = (data_frame['BMI'] - 12) / (98 - 12)   #(value - min) / (max - min)
     data_frame['MentHlth'] = (data_frame['MentHlth'] - 1) / (30 - 1)
     data_frame['PhysHlth'] = (data_frame['PhysHlth'] - 1) / (30 - 1)
