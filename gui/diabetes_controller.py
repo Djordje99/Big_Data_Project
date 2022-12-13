@@ -76,7 +76,7 @@ class DiabetesController(QMainWindow):
 
         prediction = predict(data_frame_row)
 
-        print(prediction)
+        print(f'Prediction: {prediction}')
 
 
     def lda_display(self):

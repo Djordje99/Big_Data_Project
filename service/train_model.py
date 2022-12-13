@@ -11,9 +11,11 @@ def __normalize_variable():
     loader = DataLoader()
     data_frame = loader.load_data()
 
+    print(data_frame)
+
     num_attribs = ['BMI', 'MentHlth', 'PhysHlth', 'Income', 'Education', 'Age', 'GenHlth']
 
-    cat_attribs = list(data_frame.columns[~data_frame.columns.isin(['BMI', 'MentHlth', 'AnyHealthcare', 'Income', 'Education', 'Age', 'GenHlth',
+    cat_attribs = list(data_frame.columns[~data_frame.columns.isin(['BMI', 'MentHlth', 'Income', 'Education', 'Age', 'GenHlth',
                                                     'PhysHlth', 'Diabetes_012'])])
 
     data_frame[cat_attribs] = data_frame[cat_attribs].astype('category')
@@ -25,6 +27,8 @@ def __normalize_variable():
     label_map = {0:0, 1:1, 2:1}
 
     data_frame['Diabetes_012'] = data_frame['Diabetes_012'].map(label_map)
+
+    print(data_frame)
 
     return data_frame, num_attribs, cat_attribs
 
