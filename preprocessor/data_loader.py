@@ -6,7 +6,7 @@ COLUMN_NAMES = ['Diabetes_012','HighBP','HighChol','CholCheck','BMI','Smoker','S
 DTYPE = {'Diabetes_012': float,'HighBP': float,'HighChol': float,'CholCheck': float,'BMI': float,'Smoker': float,'Stroke': float,'HeartDiseaseorAttack': float,'PhysActivity': float,'Fruits': float,'Veggies': float,'HvyAlcoholConsump': float,
                     'AnyHealthcare': float,'NoDocbcCost': float,'GenHlth': float,'MentHlth': float,'PhysHlth': float,'DiffWalk': float,'Sex': float,'Age': float,'Education': float,'Income': float}
 
-DATA_PATH = 'D:\\Master\\Big Data\\Projekat\\Big_Data_Project\\training_data\\diabetes.csv'
+DATA_PATH = 'D:\\Fax\\Big_Data_Project\\training_data\\diabetes.csv'
 
 class DataLoader():
     def __init__(self) -> None:

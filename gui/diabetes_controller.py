@@ -80,6 +80,11 @@ class DiabetesController(QMainWindow):
 
         prediction = predict(data_frame_row)
 
+        if prediction == 1:
+            QMessageBox.information(self, 'Info', 'Possible presents of diabetes. Check with you\'re doctor.', QMessageBox.Ok)
+        else:
+            QMessageBox.information(self, 'Info', 'Prediction seems to be negative for diabetes.', QMessageBox.Ok)
+
         print(f'Prediction: {prediction}')
 
 
